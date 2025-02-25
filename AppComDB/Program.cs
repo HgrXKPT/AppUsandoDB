@@ -80,7 +80,7 @@ class Hello
             //abro conexão
             connection.Open();
             try
-            {   //faço a pesquisa se possui os valores email e senha corretamente
+            {   
                 using(SqlCommand cmd = new SqlCommand("INSERT INTO Pessoas (Email, Senha) VALUES (@Email, @Senha)",connection))
                 {
                     cmd.Parameters.AddWithValue("@Email",email);
